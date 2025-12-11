@@ -2,6 +2,6 @@ wezvafrontendapp:
   replicas: 1
   wezvafrontendapp:
     image:
-      image: 001647536300.dkr.ecr.ap-south-1.amazonaws.comwezvatechfrontend
-      tag: fb1
+      repository: 303255670930.dkr.ecr.ap-south-1.amazonaws.com/wezvatechbackend
+      tag: fb11
 
