@@ -2,6 +2,6 @@ wezvafrontendapp:
   replicas: 1
   wezvafrontendapp:
     image:
-      image: 001647536300.dkr.ecr.ap-south-1.amazonaws.comwezvatechfrontend
+      repository: 001647536300.dkr.ecr.ap-south-1.amazonaws.com/wezvatechfrontend
       tag: rel6
 
