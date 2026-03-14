@@ -3,5 +3,5 @@ wezvafrontendapp:
   wezvafrontendapp:
     image:
       image: 001647536300.dkr.ecr.ap-south-1.amazonaws.comwezvatechfrontend
-      tag: rel6
+      tag: rel2
 
