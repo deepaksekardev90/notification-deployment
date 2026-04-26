@@ -3,5 +3,5 @@ wezvafrontendapp:
   wezvafrontendapp:
     image:
       image: 081654307023.dkr.ecr.ap-south-1.amazonaws.comwezvatechfrontend
-      tag: fb29
+      tag: fb33
 
