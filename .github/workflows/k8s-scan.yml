@@ -1,0 +1,8 @@
+name: k8s Pipeline
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'nodechart/**'

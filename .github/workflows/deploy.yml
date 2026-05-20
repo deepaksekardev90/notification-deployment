@@ -1,6 +1,12 @@
 name: CD Pipeline
 
 on:
+  push:
+    paths:
+      - 'envs/**'
+    branches:
+      - main
+
   workflow_dispatch:
     inputs:
       ECRURL:
