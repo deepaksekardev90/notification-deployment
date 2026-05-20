@@ -6,3 +6,24 @@ on:
       - main
     paths:
       - 'nodechart/**'
+
+  workflow_dispatch:
+    
+jobs:
+  deploy:
+    runs_on: ubuntu-latest
+
+    steps:
+      # ------------
+      # Install Helm
+      # ------------
+      - name: install Helm
+        run: curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+
+      # -------------------------
+      # Convert and scan k8s yaml
+      # -------------------------
+      - name: kubesec
+        run: |
+          helm template ./nodechart -f envs/functional/values.yaml > renderedmanifest.yaml
+          docker run --rm -v "$(pwd):/app" kubesec/kubesec scan /app/renderedmanifest.yaml      
