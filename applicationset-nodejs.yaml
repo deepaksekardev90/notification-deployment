@@ -6,17 +6,17 @@ metadata:
 spec:
   generators:
   - git:
-      repoURL: https://gitlab.com/wezvaprojects/ninjas/jobready1.0/deployment/nodejs-express.git
+      repoURL: https://github.com/wezva-fintech/notification-deployment.git
       revision: HEAD
       directories:
       - path: envs/*
   template:
     metadata:
-      name: '{{path.basename}}-frontend' 
+      name: '{{path.basename}}-node'
     spec:
       project: default
       source:
-        repoURL: https://gitlab.com/wezvaprojects/ninjas/jobready1.0/deployment/nodejs-express.git
+        repoURL: https://github.com/wezva-fintech/notification-deployment.git
         targetRevision: main
         path: nodechart
         helm:

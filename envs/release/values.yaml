@@ -1,7 +1,7 @@
-wezvafrontendapp:
+wezvanotificationapp:
   replicas: 1
-  wezvafrontendapp:
+  wezvanotificationapp:
     image:
-      image: 001647536300.dkr.ecr.ap-south-1.amazonaws.comwezvatechfrontend
+      image: 081654307023.dkr.ecr.ap-south-1.amazonaws.com/wezvatechnotification
       tag: rel6
 

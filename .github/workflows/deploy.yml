@@ -20,7 +20,7 @@ on:
       IMAGE:
         description: "Image Tag"
         required: true
-        default: "fb28"
+        default: "rel6"
       TEST:
         description: "Environment"
         required: true

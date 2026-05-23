@@ -1,7 +1,7 @@
-wezvafrontendapp:
+wezvanotificationapp:
   replicas: 1
-  wezvafrontendapp:
+  wezvanotificationapp:
     image:
-      image: 081654307023.dkr.ecr.ap-south-1.amazonaws.com/wezvatechfrontend
-      tag: fb13
+      image: 081654307023.dkr.ecr.ap-south-1.amazonaws.com/wezvatechnotification
+      tag: int13
 
