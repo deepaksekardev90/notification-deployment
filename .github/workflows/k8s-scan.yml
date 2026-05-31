@@ -1,22 +1,22 @@
-name: k8s Pipeline
+name: DevSecOps Pipeline
 
 on:
   push:
     branches:
-      - main
+      - dev
     paths:
       - 'nodechart/**'
 
   workflow_dispatch:
     
 jobs:
-  deploy:
+  devsecops:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
-        
+
       # ------------
       # Install Helm
       # ------------
