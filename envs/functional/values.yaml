@@ -3,5 +3,5 @@ wezvanotificationapp:
   wezvanotificationapp:
     image:
       image: 081654307023.dkr.ecr.ap-south-1.amazonaws.com/wezvatechnotification
-      tag: fb40
+      tag: fb41
 
