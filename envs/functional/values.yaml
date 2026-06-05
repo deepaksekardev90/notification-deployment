@@ -3,7 +3,7 @@ wezvanotificationapp:
   wezvanotificationapp:
     image:
       image: 081654307023.dkr.ecr.ap-south-1.amazonaws.com/wezvatechnotification
-      tag: fb33
+      tag: fb45
 notificationSvc:
   ports:
     - nodePort: 30000
