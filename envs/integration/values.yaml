@@ -2,8 +2,8 @@ wezvanotificationapp:
   replicas: 1
   wezvanotificationapp:
     image:
-      image: 081654307023.dkr.ecr.ap-south-1.amazonaws.com/wezvatechnotification
-      tag: int13
+      repository: 081654307023.dkr.ecr.ap-south-1.amazonaws.com/wezvatechnotification
+      tag: fb13
 notificationSvc:
   ports:
     - nodePort: 30000
