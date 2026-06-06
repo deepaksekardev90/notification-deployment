@@ -35,17 +35,4 @@ spec:
       tolerations: {{- toYaml .Values.wezvanotificationapp.tolerations | nindent 8 }}
       topologySpreadConstraints: {{- toYaml .Values.wezvanotificationapp.topologySpreadConstraints
         | nindent 8 }}
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: {{ include "nodechart.fullname" . }}-notification-svc
-  labels:
-  {{- include "nodechart.labels" . | nindent 4 }}
-spec:
-  type: {{ .Values.notificationSvc.type }}
-  selector:
-    app.kubernetes.io/name: wezvanotificationapp
-    {{- include "nodechart.selectorLabels" . | nindent 4 }}
-  ports:
-  {{- .Values.notificationSvc.ports | toYaml | nindent 2 }}
+
