@@ -6,7 +6,7 @@ on:
       ECRURL:
         description: "ECR Registry URL (with / at end)"
         required: true
-        default: "081654307023.dkr.ecr.ap-south-1.amazonaws.com/"
+        default: "010526266515.dkr.ecr.ap-south-1.amazonaws.com/"
       REPO:
         description: "Repository Name"
         required: true
@@ -38,7 +38,7 @@ jobs:
       - name: Checkout Deployment Repo
         uses: actions/checkout@v4
         with:
-          repository: wezva-fintech/notification-deployment
+          repository: deepaksekardev90/notification-deployment/
           ref: main
           token: ${{ secrets.GH_PAT }}
 
