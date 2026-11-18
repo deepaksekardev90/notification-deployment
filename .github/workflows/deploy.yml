@@ -38,7 +38,7 @@ jobs:
       - name: Checkout Deployment Repo
         uses: actions/checkout@v4
         with:
-          repository: deepaksekardev90/notification-deployment/
+          repository: deepaksekardev90/notification-deployment
           ref: main
           token: ${{ secrets.GH_PAT }}
 
